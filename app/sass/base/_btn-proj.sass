@@ -1,0 +1,76 @@
+// BTN-PROJ BEGIN
+
+.btn-proj
+	display: block
+	height: 27px
+	padding: 6px 12px
+	margin-right: 8px
+	margin-bottom: 5px
+	box-sizing: border-box
+	cursor: pointer
+	background-color: #2a2a2a
+	font-family: Arial, sans-serif
+	font-size: 13px
+	color: #696969
+	text-transform: uppercase
+	border: 0
+	outline: 0
+	box-shadow: -1px -1px 0 #333633, inset 0 -1px 0 black
+	text-shadow: -1px -1px 0 black
+	transition: all .2s
+
+.btn-proj:hover
+	background-color: #38cb2d
+	color: black
+	text-shadow: none
+	box-shadow: -1px -1px 0 #4ff632, inset 0 -1px 0 #290e00
+
+.btn-proj:active
+	background-color: #2a9922
+	color: black
+	text-shadow: none
+	box-shadow: -1px -1px 0 #37ad23, inset 0 -1px 0 #290e00
+
+.btn-proj__tab
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 314px
+	padding: 10px 0
+	margin-right: 0
+	min-height: 43px
+	height: auto
+	box-shadow: inset 1px 1px 0 #3b3b3b
+	position: relative
+
+.btn-proj__tab:after
+	content: ""
+	display: block
+	width: calc(100% - 1px) //Отступ для отображения тени
+	height: calc(100% - 1px) //Отступ для отображения тени
+	background-color: rgba(0,0,0,.5)
+	opacity: 1
+	position: absolute
+	top: 1px
+	left: 1px
+	transition: all .2s
+
+.btn-proj__tab:hover
+	background-color: #2a2a2a
+	box-shadow: 0 0 0 rgba(0,0,0,1), inset 1px 1px 0 #3b3b3b
+
+.btn-proj__tab:hover:after
+	opacity: 0
+
+.btn-proj__tab-text
+	width: 150px
+	color: white
+
+.btn-proj__tab_active:after
+	opacity: 0
+
+// BTN-PROJ END

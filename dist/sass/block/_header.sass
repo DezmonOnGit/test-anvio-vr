@@ -1,0 +1,70 @@
+.header
+	margin-bottom: 290px
+
+.header__top
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-top: 4px
+	margin-bottom: 6px
+
+.header__top-left
+	margin-right: auto
+
+.header__top-right
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+.menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	list-style-type: none
+
+.menu-burger
+	display: none
+	width: 30px
+	height: 20px
+	position: fixed
+	top: 10px
+	left: 10px
+
+.menu-burger:before
+	content: ""
+	display: block
+	width: 100%
+	height: 3px
+	background-color: white
+	position: absolute
+	top: 0
+	left: 0
+	transition: all .3s
+
+.menu-burger:after
+	content: ""
+	display: block
+	width: 100%
+	height: 3px
+	background-color: white
+	position: absolute
+	bottom: 0
+	left: 0
+	transition: all .3s
+
+.menu-burger__line
+	display: block
+	width: 100%
+	height: 3px
+	background-color: white
+	position: absolute
+	top: calc(50% - 1.5px)
+	left: 0

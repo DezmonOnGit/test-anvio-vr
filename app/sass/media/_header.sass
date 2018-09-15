@@ -1,0 +1,59 @@
+@media (max-width: 943px)
+	.header
+		margin-bottom: 20px
+
+	.header__top
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding-top: 20px
+		margin-bottom: 222px
+
+	.header__top-left
+		margin-right: 0
+		margin-bottom: 20px
+
+@media (max-width: 768px)
+	.header__top
+		margin-bottom: 50px
+
+	.header__top-right
+		justify-content: center
+
+	.menu-burger
+		display: block
+		z-index: 99
+
+	.menu-burger_active
+		position: fixed
+		top: 10px
+		left: 10px
+		z-index: 999
+
+	.menu-burger_active > .menu-burger__line
+		width: 0
+
+	.menu-burger_active:before
+		width: 24px
+		transform-origin: left center
+		transform: rotate(45deg)
+
+	.menu-burger_active:after
+		width: 24px
+		transform-origin: left center
+		transform: rotate(-45deg)
+
+	.menu-burger_active + .menu
+		display: block
+		width: 100%
+		height: calc(100% - 135px)
+		padding-top: 135px
+		margin: 0 auto
+		position: fixed
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,.8)
+		z-index: 99
+	
+	.menu
+		display: none
